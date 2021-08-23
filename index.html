@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About us</li>
+            <li>Contact us</li>
+        </ul>
+    </nav>
+    <div class="heading">Survey Form- Stunner Esports</div>
+
+
+    <div class="main">
+        <div class="part1">
+            <h1 class="headings">FPS Games Survey</h1>
+
+            <form action="form.php">
+                <label for="name">
+                    Enter your In-game Name <input type="text" placeholder="IG Name">
+                </label>
+                <label for="mail">
+                    Email
+                    <input type="email" name="email" id="mail">
+                </label>
+                <div class="game">
+                    Which FPS game you play<br>
+                    <label for="CSGO">
+                        <input type="checkbox" name="Game" id="CSGO"> CSGO 
+                    </label><br>
+                    <label for="Valorant">
+                        <input type="checkbox" name="Game" id="Valorant"> Valorant
+                    </label><br>
+                    <label for="Warzone">
+                        <input type="checkbox" name="Game" id="Warzone"> Warzone
+                    </label><br>
+                    <label for="Apex Legends">
+                        <input type="checkbox" name="Game" id="Apex Legends"> Apex Legends
+                    </label><br>
+                </div>
+                <div class="role">
+                    Which role do you play<br>
+                    <label for="Assualter">
+                        <input type="radio" name="Role" id="Assualter"> Assualter
+                    </label><br>
+                    <label for="Sniper">
+                        <input type="radio" name="Role" id="Sniper"> Sniper
+                    </label><br>
+                    <label for="Scout">
+                        <input type="radio" name="Role" id="Scout"> Scout
+                    </label><br>
+                    <label for="IGL">
+                        <input type="radio" name="Role" id="IGL"> In-game Leader
+                    </label><br>
+                    <label for="Supporter">
+                        <input type="radio" name="Role" id="Supporter"> Supporter
+                    </label><br>
+                </div>
+                <div class="guns">
+                    Favourite Gun
+                    <label for="gun">    
+                        <input type="text" name="gun" id="gun" placeholder="AK-47, Vandal">
+                    </label>
+                </div>
+                <div class="profile">
+                    Enter screenshot of your profile
+                    <label for="prof">
+                        <input type="file" name="profile" id="prof" accept="image/jpeg, image/png">
+                    </label>
+                </div>
+                <div>
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+
+        </div>
+        <div class="part2">
+            <img src="csgo.png" alt="" height="200px" width="200px">
+            <img src="valo.png" alt="" height="200px" width="200px">
+            <img src="cod.png" alt="" height="200px" width="200px">
+            <img src="apex legends.png" alt="" height="200px" width="200px">
+        </div>
+
+
+    </div>
+</body>
+</html>
